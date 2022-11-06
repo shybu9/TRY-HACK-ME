@@ -6,7 +6,7 @@
 <br>
 
 ![bonty intro](https://user-images.githubusercontent.com/112984045/200177378-c657e25e-8fa7-43fa-b5de-7c34aa08ee05.png)
- ~ the IP will be given once once you join the room and Start Machine succefully after connecting to OPEN-VPN
+ ~ the IP will be given once you join the room and Start Machine succefully after connecting to OPEN-VPN
  
  ## ENUMERATION :
 
@@ -32,7 +32,7 @@
  
  ## FOOTHOLD
  
- * `the ftp port 21 is Anonymous FTP login allowed (FTP code 230)`
+ * `the ftp port 21 has Anonymous FTP login allowed (FTP code 230)`
  ![bonty ftpmarked](https://user-images.githubusercontent.com/112984045/200180232-5e8d8e21-8bdc-4e18-b1c6-f7f3a30ce9ba.png)
  <br> ~ Therefore we can login to ftp without password by using USERNAME: Anonymous.
  
@@ -73,7 +73,7 @@
    ![bonty 4](https://user-images.githubusercontent.com/112984045/200181900-16b07e3f-d763-443a-9a8b-b097ea46b0ed.png)
    <br>
    
-   *As we have username: 'lin' and password list: locks.txt. We can use hydra tool for bruteforcing ssh server.
+   * We have username: 'lin' and password list: locks.txt. We can use hydra tool for bruteforcing ssh server.
    <br>command:
    ```bash
    hydra -l lin -P locks.txt ssh://<IP>
@@ -101,6 +101,7 @@
   ```bash
   sudo -l
   ```
+  ![bonty sudo-l](https://user-images.githubusercontent.com/112984045/200184909-39ac8c6a-66dd-4ba5-8aa2-a82be628221b.png)
    <br> ~ we can observe that user lin can run the commad tar as sudo.
    
   <br>
@@ -123,6 +124,7 @@ cd /root
 cat root.txt
 ```
 
+`DO SUBMIT YOUR FLAG TO COMPLETE THE TASK`
    
-   
+### FOR ANY DOUBTS OR SUGGESTIONS DO WRITE TO shy.bu9@gmail.com
    
