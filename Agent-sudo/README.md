@@ -46,7 +46,7 @@
  curl http://<IP> -H "User-Agent : R" -L
  ```
  #### arguments
- ` -H : used for mentioning the host name .i.e User-Agent : R
+ ` -H : used for mentioning the host name .i.e User-Agent : R`
  ` -L : used to follow any redirects`
  <br>
  ![agent curlR](https://user-images.githubusercontent.com/112984045/200206715-6a3b72ad-ef57-4f6f-a78b-d1c6e3903f91.png)
@@ -82,6 +82,15 @@ get To_agentJ.txt
 ```bash
 get cute-alien.jpg
 ```
+![agent ftplogin](https://user-images.githubusercontent.com/112984045/200209136-fb680d99-f316-4702-ba9d-ebbccc994923.png)
+
+<br>
+
+* Now we can read the files using cat command :
+```bash
+cat To_agentJ.txt 
+```
+![agent to_agentJ](https://user-images.githubusercontent.com/112984045/200210004-d72412f2-3131-4a9b-ae7e-7010b6d8daae.png)
 
 
 
