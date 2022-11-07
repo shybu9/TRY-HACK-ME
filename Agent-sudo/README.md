@@ -1,7 +1,9 @@
 # Agent-sudo
   ~ https://tryhackme.com/room/agentsudoctf
+
 * ### This is a direct walk-through to the flag. Hopping that you have given your best before referring to this write-up
 * ### Assuming that your are using Attack-box or conntected to VPN. If not, do refer to [vpn_connection](https://github.com/shybu9/TRY-HACK-ME/tree/main/OPEN-VPN-CONNECTION "OPEN VPN CONNECTION")
+*  ### Do follow this page through out the line to void confusion.
 
 <br>
 
@@ -95,7 +97,7 @@ cat To_agentJ.txt
  <br> ~ Here we can understand that the other two are not just pictures but something is hidden in them.
 <br>
 
-` * Insted of john-the-ripper i have used stegcracker which is less complex but time consuming.`
+* ` Insted of john-the-ripper i have used stegcracker which is less complex but time consuming.`
  ![agent stegcracker fail](https://user-images.githubusercontent.com/112984045/200213716-7237b48b-25f7-4a42-9a7f-a2760142500b.png)
  <br> ~ Firstly i have tried to crack 'citie.png' which poped as error. Then gone for the other file 'cute-alien.jpg'.
  <br>
@@ -113,7 +115,7 @@ cat To_agentJ.txt
  
  <br>
  
- `* Now we should definetly go for john-the-ripper.`
+ * ` Now we should definetly go for john-the-ripper.`
  <br>
  
  * Firstly, to extract hidden directory use the command :
@@ -124,6 +126,7 @@ cat To_agentJ.txt
  <br> ~ There is a zip file here named '8702.zip'.
  * When we try to unzip the file, it redirecting us to To_agentR.txt
   <br>
+  
   * We can use john for here <br>
   
   * Firstly get the hash into a file by using the command :
@@ -159,15 +162,16 @@ cat To_agentJ.txt
 <br>
 
 * Ok.. Now let us login to SSH with the credentials we already had we had long ago.
-* ![agent userflag](https://user-images.githubusercontent.com/112984045/200223600-afb7329d-6b20-44bc-839a-d8bdc96ead16.png)
+ ![agent userflag](https://user-images.githubusercontent.com/112984045/200223600-afb7329d-6b20-44bc-839a-d8bdc96ead16.png)
 <br> ~ I have just loged in and captured the user flag.Then downloaded the 'Alien_autospy.jpg' file using the command : 
 ```bash
 scp <ssh_user@IP>:Alien_autospy.jpg <directory path>
 ```
 ![agent scp](https://user-images.githubusercontent.com/112984045/200224880-50e93634-eefc-4412-b06d-5918a0c9c43c.png)
 
-* The image question was a bit tircky. Here we have to search for 'reverse image search' in google.
+* The image question was a bit tircky. Here we have to search for 'reverse image search' in google. <br>
 * Upload the image their and look for FOX-NEWS' articals in results.
+![agent image](https://user-images.githubusercontent.com/112984045/200231888-d2bec7dc-ecdf-40a9-83d3-ac57af326589.png)
 
 
 
@@ -188,7 +192,7 @@ sudo -u#-1 /bin/bash
 ```
 
 <br>
-* Rather i have searched for google regarding this right.<br>
+* Rather i have searched for google regarding this right. <br>
 
 * I end up using the same command after getting CVE: details on google.
 ![agent rootflag](https://user-images.githubusercontent.com/112984045/200226962-1c1b493b-a26b-4f54-a154-d7f77fbe2dde.png)
