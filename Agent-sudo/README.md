@@ -41,4 +41,48 @@
   <br> ~ Here we have been redirected to Annoucement page as user-agent.
   
   
+ * After reading hint for the next question, we came to know that this is not a browser thing and lets for curl command :
+ ```bash
+ curl http://<IP> -H "User-Agent : R" -L
+ ```
+ #### arguments
+ ` -H : used for mentioning the host name .i.e User-Agent : R
+ ` -L : used to follow any redirects`
+ <br>
+ ![agent curlR](https://user-images.githubusercontent.com/112984045/200206715-6a3b72ad-ef57-4f6f-a78b-d1c6e3903f91.png)
+<br> ~ the Agent R is talking about other 25 users and hint is given as 'user agent : C'
+* Lets curl once again using ' User-Agent : C'
+```bash
+curl http://<IP> -H "User-Agent : C" -L
+```
+![agent curlC](https://user-images.githubusercontent.com/112984045/200207134-58f372d6-b46b-4c24-80fc-21ec4f91eb46.png)
+<br> ~ Here we came to the name of the Agent and there is one more Agent called Agent-J.
+
+## FOOTHOLD
+* Now we have the name of user, maybe we can try bruteforcing the ftp and ssh server.
+* By looking at the next question, we go for FTP bruteforce first using hydra command :
+```bash
+hydra -l < user name that we got in curl > -P < rockyou file including its path> ftp://<IP>
+```
+![agent hydra](https://user-images.githubusercontent.com/112984045/200208317-9c6e5cda-379d-443e-a591-109cbaca36a2.png)
+<br> ~ We have successfully got the username and password for FTP.
+
+<br>
+
+* After logging in to FTP, we can look for files and get them using the commands :
+``` bash
+ls -la
+```
+```bash
+get cutie.png
+```
+```bash
+get To_agentJ.txt
+```
+```bash
+get cute-alien.jpg
+```
+
+
+
  
