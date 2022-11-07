@@ -192,6 +192,7 @@ sudo -u#-1 /bin/bash
 ```
 
 <br>
+
 * Rather i have searched for google regarding this right. <br>
 
 * I end up using the same command after getting CVE: details on google.
