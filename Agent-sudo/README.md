@@ -124,7 +124,8 @@ cat To_agentJ.txt
  <br> ~ There is a zip file here named '8702.zip'.
  * When we try to unzip the file, it redirecting us to To_agentR.txt
   <br>
-  * We can use john for here
+  * We can use john for here <br>
+  
   * Firstly get the hash into a file by using the command :
   ```bash
   john 8702.zip > zip.hash
@@ -187,12 +188,16 @@ sudo -u#-1 /bin/bash
 ```
 
 <br>
-* Rather i have searched for google regarding this right.
+* Rather i have searched for google regarding this right.<br>
+
 * I end up using the same command after getting CVE: details on google.
 ![agent rootflag](https://user-images.githubusercontent.com/112984045/200226962-1c1b493b-a26b-4f54-a154-d7f77fbe2dde.png)
 <br> ~ We have successfully escalated to root and captured the flag.
 * At last the name of Agent R is revealed, which even i was curious to know.
 
 
+`DO SUBMIT YOUR FLAG TO COMPLETE THE TASK`
+   
+### FOR ANY DOUBTS OR SUGGESTIONS DO WRITE TO shy.bu9@gmail.com
 
  
