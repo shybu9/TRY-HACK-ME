@@ -124,7 +124,7 @@ get Eli's_Creds.txt
 ```bash
 ssh <username from brainfuck execution>@<IP>
 ```
-
+![rabbit ssh login](https://user-images.githubusercontent.com/112984045/200711363-8062ba83-b659-4c0c-92b5-3f1302550815.png)
 
 
 
