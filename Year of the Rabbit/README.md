@@ -20,7 +20,7 @@
  ![rabbit nmap](https://user-images.githubusercontent.com/112984045/200450896-f5d9f661-a182-4d23-a6bd-ac86ea7ebce7.png)
  <br>~ we can add -v argument for more verbose output.
  
- * I usually perform one more scan by using my personal tool : [port-scanner](https://github.com/shy.bu9/portscanner)
+ * I usually perform one more scan by using my personal tool : [port-scanner](https://github.com/shybu9/port-Scanner)
 ![rabbit portscanner](https://user-images.githubusercontent.com/112984045/200451032-97c2aa8e-2ace-4a73-8c87-d8280bfd5bee.png)<br>
  ~ I prefer this tool because of its speed as you can see it just took 858 seconds for scanning 65535 ports.Even still some improvements to be done
  
