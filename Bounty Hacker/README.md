@@ -18,7 +18,7 @@
  ![bonty nmap](https://user-images.githubusercontent.com/112984045/200179161-11ae6f38-9148-47f6-acbc-267679af2992.png)
   <br>~ we can add -v argument for more verbose output.
  
- * I usually perform one more scan by using my personal tool : [port-scanner](https://github.com/shy.bu9/portscanner)
+ * I usually perform one more scan by using my personal tool : [port-scanner](https://github.com/shybu9/port-Scanner)
  ![bonty portscanner](https://user-images.githubusercontent.com/112984045/200180020-c653c656-2254-4224-b674-866404b281eb.png)<br>
   ~ I prefer this tool because of its speed as you can see it just took 858 seconds for scanning 65535 ports.Even still some improvements to be done
  
