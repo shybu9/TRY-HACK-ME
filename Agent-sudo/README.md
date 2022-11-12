@@ -20,7 +20,7 @@
  ![agent nmap](https://user-images.githubusercontent.com/112984045/200202581-9bf78648-dd20-405c-a637-f425b7906587.png)
 <br>~ we can add -v argument for more verbose output.
  
- * I usually perform one more scan by using my personal tool : [port-scanner](https://github.com/shy.bu9/portscanner)
+ * I usually perform one more scan by using my personal tool : [port-scanner](https://github.com/shy.bu9/port-Sanner)
  ![agent portscanner](https://user-images.githubusercontent.com/112984045/200202803-394383ff-08e1-482d-81fc-dcf55cb58e0c.png)<br>
 
   ~ I prefer this tool because of its speed as you can see it just took 858 seconds for scanning 65535 ports.Even still some improvements to be done
