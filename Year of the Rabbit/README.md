@@ -12,7 +12,7 @@
  
  ## ENUMERATION :
 
- * For ENUMERATION we use nmap tool which come by default in kali linux.
+ * For ENUMERATION we use nmap tool which comes by default in kali linux.
  <br>command : 
  ```bash
  nmap -sVC -T4 -v <IP> 
