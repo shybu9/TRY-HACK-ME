@@ -106,7 +106,7 @@
    
   <br>
   
-  ` * We can look in [GTFOBins](https://gtfobins.github.io/gtfobins/tar/) for a command to escalate.`
+  * We can look in [GTFOBins](https://gtfobins.github.io/gtfobins/tar/) for a command to escalate.
   ![bonty gtfbins tar](https://user-images.githubusercontent.com/112984045/200183946-d92a93da-2afa-4d22-9c5f-9a8259c89517.png)
 <br>
 
